@@ -1,0 +1,15 @@
+1. Add a task: Use addTask to add tasks to the schedule. Example:
+Task task = factory.createTask("Task Description", "HH:MM", "HH:MM", "Priority");
+manager.addTask(task);
+
+2.Remove a task: Use removeTask to remove a task by its description. Example:
+manager.removeTask("Task Description");
+
+3. Edit a task: Use editTask to modify an existing task's details. Example:
+manager.editTask("Old Description", "New Description", "HH:MM", "HH:MM", "Priority");
+
+4. Mark task as completed: Example:
+manager.markTaskCompleted("Task Description");
+
+5. View tasks by priority: Example:
+manager.viewTasksByPriority("Priority Level");
